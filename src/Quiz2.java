@@ -11,7 +11,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author lamon
+ * @author AngelOfTheVoid
  */
 public class Quiz2 {
 
@@ -20,11 +20,23 @@ public class Quiz2 {
      */
     public static void main(String[] args) {
         // Can use Wall1.txt, Wall2.txt, or Wall3.txt
-        City kw = new City("Wall1.txt");
-        Robot karel = new Robot(kw, 1, 1, Direction.WEST);
+        City kw = new City("Wall3.txt");
+        Robot rob = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
-       
+       while(true){
+        if(!rob.frontIsClear()){
+            rob.turnLeft();
+            rob.move();
+        //when rob checks if thereis  a wall it will then turn and move if there is
+    if(rob.frontIsClear()){
+        rob.turnLeft();
+        rob.turnLeft();
+        rob.turnLeft();
+    //when there is no wall infont of rob it will turn three times  
+    }
+    }
+       }  
     }
     
 }
