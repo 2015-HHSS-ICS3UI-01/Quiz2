@@ -11,7 +11,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author lamon
+ * @author la
  */
 public class Quiz2 {
 
@@ -25,6 +25,54 @@ public class Quiz2 {
         
         //program solutions coded under here
        
+      // turn left and check for wall 
+       
+        while(true){
+        if(!karel.frontIsClear()){
+            karel.turnLeft();
+            karel.move();
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();
+            // break ends while loop
+        } else if(karel.frontIsClear()){
+            break;
+            
+               
+           
+            
+            
+           
+           
+          
+           
+           
+        
+            
+            
+            
+            
+            
+            
+      
+           
+         
+           
+                   
+           
+           
+       
+           
+       
+       } 
+       
+               
+       
+       
+      
     }
     
+    }
 }
+
+
