@@ -24,14 +24,14 @@ public class Quiz2 {
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
-       int Turnright = 3;
-       
+        //loop program until wall is found
         while (true)
-           
+           //check if front is clear
         if (karel.frontIsClear()){
+           //end program if the front is clear(wall is found)
            break;
            
-           
+           //if the front isnt clear,go down street and check for wall again
        }else {
             karel.turnLeft();
             karel.move();
