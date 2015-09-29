@@ -24,16 +24,21 @@ public class Quiz2 {
         Robot rob = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
-       while(true){
-        if(!rob.frontIsClear()){
+      
+        //will loop forever
+        while(true){
+        
+           //when rob checks if thereis  a wall it will then turn and move if there is
+           if(!rob.frontIsClear()){
             rob.turnLeft();
             rob.move();
-        //when rob checks if thereis  a wall it will then turn and move if there is
-    if(rob.frontIsClear()){
+        
+    //when there is no wall infont of rob it will turn three times
+            if(rob.frontIsClear()){
         rob.turnLeft();
         rob.turnLeft();
         rob.turnLeft();
-    //when there is no wall infont of rob it will turn three times  
+      
     }
     }
        }  
