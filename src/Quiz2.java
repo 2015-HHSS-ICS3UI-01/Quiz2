@@ -20,11 +20,25 @@ public class Quiz2 {
      */
     public static void main(String[] args) {
         // Can use Wall1.txt, Wall2.txt, or Wall3.txt
-        City kw = new City("Wall1.txt");
+        City kw = new City("Wall3.txt");
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
+       int Turnright = 3;
        
+        while (true)
+           
+        if (karel.frontIsClear()){
+           break;
+           
+           
+       }else {
+            karel.turnLeft();
+            karel.move();
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();  
+        }
     }
     
 }
