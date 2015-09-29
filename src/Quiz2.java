@@ -24,26 +24,22 @@ public class Quiz2 {
         Robot commando = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
-       
-        if(commando.frontIsClear())
-        { 
-        commando.move();
-        commando.move();
-        commando.move();
-      
-       }else{
-               commando.turnLeft();
         
         
-        while(commando.frontIsClear())
-        {
+        while(!commando.frontIsClear())
+        {   commando.turnLeft();
             commando.move();
-        }    
+            commando.turnLeft();
+            commando.turnLeft();
+            commando.turnLeft();
+        }
+          
         
  
         
     }
-
+    {
+        
+    }
     }
 
-}
