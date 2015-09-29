@@ -23,8 +23,43 @@ public class Quiz2 {
         City kw = new City("Wall1.txt");
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
-        //program solutions coded under here
-       
-    }
+        // make karel move down wall
+        
+        karel.turnLeft();
+      
+            while( true){
+                
+                if(karel.frontIsClear())
+                {
+                    karel.move();
+                    
+                    
     
-}
+                    
+                    
+            // forgot how to break at bottom of wall :( 
+            
+            
+               
+            
+                            
+                   
+
+     
+       
+    
+    
+                }
+            }
+        }
+    }
+
+
+
+
+    
+    
+
+
+
+
