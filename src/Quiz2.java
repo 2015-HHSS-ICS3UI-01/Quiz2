@@ -11,7 +11,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author lamon
+ * @author richj0985
  */
 public class Quiz2 {
 
@@ -23,8 +23,25 @@ public class Quiz2 {
         City kw = new City("Wall1.txt");
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
-        //program solutions coded under here
-       
+        // program solutions coded under here
+        
+        // make karel move down the row of walls on the west side 
+        // until there are no walls left, therefore stops
+        // this should work in all three cities
+        
+        // make karel check if his front is not clear
+        while(!karel.frontIsClear()){
+            // make karel first turn left to face north
+            karel.turnLeft();
+            // make karel then move down a street
+            karel.move();
+            // make karel turn left three times to face the west side with the walls
+            // looping back to check again if his front is clear
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();
+        }
+        
     }
-    
+
 }
