@@ -11,7 +11,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author lamon
+ * @author MiodragM
  */
 public class Quiz2 {
 
@@ -24,7 +24,22 @@ public class Quiz2 {
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
-       
+        
+        //keeps going while statement is true
+       while (true){
+        // when front is not clear karel checks until front is clear and repeats
+        while (!karel.frontIsClear()){
+            karel.turnLeft();
+            karel.move();
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();
+        }   
+        // stop when there is no wall
+            break;
+        }
     }
+       }
+       
     
-}
+    
