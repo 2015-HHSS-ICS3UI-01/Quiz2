@@ -24,6 +24,22 @@ public class Quiz2 {
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
+        if( karel.frontIsClear()) {
+            karel.move();
+        }karel.turnLeft();
+        if( karel.frontIsClear()){
+            karel.move();
+            karel.move();
+            karel.move();
+            karel.move();
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();
+        }else if( karel.frontIsClear()){
+            karel.move();
+        }
+        
+        
        
     }
     
