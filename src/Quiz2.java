@@ -7,11 +7,12 @@
 
 import becker.robots.City;
 import becker.robots.Direction;
+import becker.robots.IPredicate;
 import becker.robots.Robot;
 
 /**
  *
- * @author lamon
+ * @author Ajay
  */
 public class Quiz2 {
 
@@ -24,7 +25,16 @@ public class Quiz2 {
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
+        if (!karel.frontIsClear())
+            karel.turnLeft();
+        while (karel.isBesideThing(IPredicate.aWall))
+            karel.move();
+        if (!karel.isBesideThing(IPredicate.aWall)){
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();
        
-    }
+        }
+    }  
     
 }
