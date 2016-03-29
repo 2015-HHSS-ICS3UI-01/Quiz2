@@ -10,7 +10,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author lamon
+ * @author brendan1214
  */
 public class Quiz2 {
 
