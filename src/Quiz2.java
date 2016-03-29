@@ -11,7 +11,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author lamon
+ * @author kevinyu
  */
 public class Quiz2 {
 
@@ -24,6 +24,20 @@ public class Quiz2 {
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
+        while(karel.getDirection() == Direction.WEST && !karel.frontIsClear()){
+        if(!karel.frontIsClear() && karel.getDirection() == Direction.WEST){
+            karel.turnLeft();
+            karel.move();
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();
+        }
+        
+        if(karel.frontIsClear() && karel.getDirection() == Direction.WEST){
+            break;
+        }
+                
+    }
        
     }
     
