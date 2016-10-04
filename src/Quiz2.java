@@ -23,15 +23,20 @@ public class Quiz2 {
         
         while(true){
         if(!karel.frontIsClear()){
+            //add 1 to wall number
             wallnumber = wallnumber + 1;
+            //turn left
             karel.turnLeft();
+            //move
             karel.move();
+            //turn right
             karel.turnLeft();
             karel.turnLeft();
             karel.turnLeft();
             
         }
         else{
+            //print wallnumber
             System.out.println(wallnumber);
             break;
         }
